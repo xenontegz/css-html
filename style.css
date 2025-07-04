@@ -1,0 +1,106 @@
+body{
+    background-color: #EEEFE0;
+}
+.main{
+    display: flex;
+    gap: 20px;
+}
+.left{
+    height: 500px;
+   margin-left: 50px;
+   flex: 1;
+   justify-content: flex-start;
+}
+.right{
+    flex: 1;
+    justify-content: flex-end;
+    margin-right: 50px;
+    height: 500px;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-image: url(./assets/kari-shea-1SAnrIxw5OY-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.circle{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #FFD66B;
+}
+.square{
+    height: 100px;
+    width: 100px;
+    background-color: #B33791;
+    position: relative;
+    top: 430px;
+    left: -50px;
+    border-bottom-left-radius: 40px;
+}
+
+h1{  
+    position: relative;
+    width: 100%;
+    color: #819A91;
+    font-size: 50px;
+    text-align: right;
+font-family:  "Tektur", sans-serif;
+}
+p{
+    position: relative;
+    text-align: right;
+    font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 1;
+}
+
+footer{
+    z-index: 1;
+    text-align: right;
+}
+
+
+@media (max-width: 680px ) {
+    .left, .right{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        flex: 1;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    p{
+        position: relative;
+        top: 0;
+        text-align: center;
+    }
+    .circle {
+        position: relative;
+        top: auto;
+        left: auto;
+      }
+    .square{
+        position: relative;
+        top: 80px;
+        left: -50px;
+    }
+    
+    h1{
+        font-size: 3.5rem;
+        text-align: center;
+        position: relative;
+        top: 0;
+        left: 0;
+
+    }
+}
+    
+
+
+
+
